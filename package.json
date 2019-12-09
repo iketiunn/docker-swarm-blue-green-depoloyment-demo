@@ -1,0 +1,7 @@
+{
+  "name": "blue-green-docker-swarm",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "ike",
+  "license": "MIT"
+}
