@@ -1,7 +1,7 @@
 version: "3.4"
 services:
   app:
-    image: ikewat/hello-server
+    image: demo/hello-server
     build: .
     stop_grace_period: 30s
     deploy:
