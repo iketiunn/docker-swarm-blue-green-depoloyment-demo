@@ -5,7 +5,7 @@ We will using a single node docker swarm to do the blue-green deployment
 docker swarm init
 
 # Build the doemo image
-docker build . -t ikewat/hello-server
+docker build . -t demo/hello-server
 
 # Deploy service on docker swarm
 $ VERSION=1 docker stack deploy -c docker-compose.yaml app
@@ -26,8 +26,8 @@ $ VERSION=2 docker stack deploy -c docker-compose.yaml app
 Ignoring unsupported options: build
 
 Updating service app_app (id: k5p71lbkljp85ugzaacnamhtb)
-image ikewat/hello-server:latest could not be accessed on a registry to record
-its digest. Each node will access ikewat/hello-server:latest independently,
+image demo/hello-server:latest could not be accessed on a registry to record
+its digest. Each node will access demo/hello-server:latest independently,
 possibly leading to different nodes running different
 versions of the image.
 
